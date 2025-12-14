@@ -1,11 +1,7 @@
 import './App.css';
-import LoginSignup from './Components/login/loginSignup.jsx';
+import AuthPage from './pages/AuthPage';
 function App() {
-    return (
-        <div>
-            <LoginSignup/>
-        </div>
-    )
+    return <AuthPage />
 }
 
 export default App
