@@ -1,5 +1,17 @@
-.header {
+.title {
+    /* box-sizing: border-box; */
+  background-color: #38304c;
+    border-top-left-radius: 0.75rem;
+  border-bottom-left-radius: 0.75rem;
+  padding: 1.5rem;
   font-size: 3rem;
   font-weight: 700;
   color: white;
+  box-shadow:0 0 15px #161616;
+}
+
+.highlight {
+  background: linear-gradient(90deg, #F5E30D, #FFB703);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }

@@ -1,6 +1,6 @@
 .loginSignup {
   background-color: #261f33;
-  border-radius: 12px;
+  border-radius: 0.75rem;
   box-shadow: 0 0 15px #161616;
   overflow: hidden;
 }

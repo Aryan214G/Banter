@@ -1,8 +1,10 @@
 import React from 'react'
-import "./AuthHeader.module.css"
+import styles from "./AuthHeader.module.css"
 const AuthHeader = () => {
   return (
-    <div className="header">Join the Banter</div>
+    <h1 className={styles.title}>
+        Join the <span className={styles.highlight}>Banter</span>
+    </h1>
   )
 }
 
