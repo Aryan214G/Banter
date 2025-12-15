@@ -4,6 +4,8 @@ const LoginSignup = () => {
     return (
     <div className = "login-signup">
         <div className="header">Sign Up</div>
+        <div class="content">
+        {/* inputs and buttons  */}
         <div className="inputs">
             <div className="name">
                 <label htmlFor="name">Name</label>
@@ -19,13 +21,11 @@ const LoginSignup = () => {
             </div>
         </div>
         <div className = "submit">
-            <div className="sign-up">
-                <input type="button" value = "Sign Up"/>
-            </div>
-            <div className="login">
-                <input type = "button" value = "Login"/>
-            </div>
+            <button>SIGN UP</button>
+            <button>LOGIN</button>
         </div>
+        </div>
+        
     </div>
     
     );
