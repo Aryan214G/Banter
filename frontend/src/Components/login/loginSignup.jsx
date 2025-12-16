@@ -1,22 +1,25 @@
-import React from "react";
+import React, { useState } from "react";
 import styles from "./loginSignup.module.css";
 
 const LoginSignup = () => {
+  const [stateVariable, setStateVariable] = useState("Sign Up");
   return (
     <div className={styles.loginSignup}>
-      <div className={styles.header}>Sign Up</div>
+      <div className={styles.header}>{stateVariable}</div>
 
       <div className={styles.content}>
         <div className={styles.inputs}>
           <div>
-            <label htmlFor="name">Name</label>
+            <label htmlFor="name">Username</label>
             <input id="name" type="text" />
           </div>
 
-          <div>
-            <label htmlFor="username">Username</label>
-            <input id="username" type="text" />
-          </div>
+          {stateVariable === "Sign Up" 
+          && (<div>
+            <label htmlFor="email">email</label>
+            <input id="email" type="email" />
+          </div>)}
+          
 
           <div>
             <label htmlFor="password">Password</label>
@@ -25,8 +28,10 @@ const LoginSignup = () => {
         </div>
 
         <div className={styles.submit}>
-          <button>Sign Up</button>
-          <button>Login</button>
+          <button className={stateVariable === "Sign Up" ? styles.activeBtn : styles.inactiveBtn} onClick = {() => setStateVariable("Sign Up")}>
+            Sign Up</button>
+          <button className={stateVariable === "Login" ? styles.activeBtn : styles.inactiveBtn} onClick = {() => setStateVariable("Login")}>
+            Login</button>
         </div>
       </div>
     </div>
