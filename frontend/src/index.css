@@ -24,3 +24,7 @@ textarea {
   font-family: inherit;
 }
 
+html, body {
+  height: 100%;
+  margin: 0;
+}

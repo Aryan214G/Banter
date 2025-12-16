@@ -1,9 +1,9 @@
 import LoginSignup from "../Components/login/loginSignup.jsx";
-import "./AuthPage.css";
+import styles from "./AuthPage.module.css";
 import AuthHeader from "../Components/login/AuthHeader.jsx";
 const AuthPage = () => {
     return (
-        <div className="auth-page">
+        <div className={styles.authPage}>
             <AuthHeader />
             <LoginSignup />
         </div>
