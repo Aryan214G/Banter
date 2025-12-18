@@ -1,0 +1,16 @@
+.authPage {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #1e192a;
+    background-image: url("/Shooting Stars.svg");
+    background-repeat: repeat;
+}
+/* body {
+  min-height: 100vh;
+  background-color: #1e192a;
+  background-image: url("/Shooting Stars.svg");
+  background-repeat: repeat;
+} */

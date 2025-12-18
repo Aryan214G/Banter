@@ -22,3 +22,6 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+*.diff
+*.diff_stat
+*.diff_name_status
