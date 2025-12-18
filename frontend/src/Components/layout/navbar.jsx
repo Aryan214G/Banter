@@ -2,14 +2,15 @@ import React from 'react'
 import styles from './navbar.module.css'
 const Navbar = () => {
   return (
-    <div className={styles.navbar}>navbar
-
-    <ul>
-      <li>Home</li>
-      <li>Friends</li>
-      <li>Servers</li>
-      <li>Profile</li>
-    </ul>
+    <div className={styles.navWrapper}>
+      <nav className={styles.navbar}>
+        <ul>
+          <li>Home</li>
+          <li>Friends</li>
+          <li>Servers</li>
+          <li>Profile</li>
+        </ul>
+      </nav>
     </div>
   )
 }
