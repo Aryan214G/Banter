@@ -62,10 +62,15 @@
 
 
 .submit {
+  box-sizing: border-box;
   display: flex;
   padding: 1rem;
   gap: 1rem;
 }
+.submit button {
+  width: 100%;
+}
+
 .activeBtn, .inactiveBtn {
   font-family: inherit;
   font-weight: 600;

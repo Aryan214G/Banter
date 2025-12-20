@@ -52,18 +52,14 @@ const LoginSignup = () => {
           <button
             type = "button"
             className={stateVariable === "Sign Up" ? styles.activeBtn : styles.inactiveBtn} 
-              onClick={(stateVariable === "Sign Up") 
-              ? handleSubmit 
-              : () => switchMode("Sign Up")}>
+              onClick= {() => switchMode("Sign Up")}>
               Sign Up
           </button>
 
           <button 
           type = "button"
           className={stateVariable === "Login" ? styles.activeBtn : styles.inactiveBtn}
-           onClick={(stateVariable === "Login") 
-              ? handleSubmit 
-              : () => switchMode("Login")}>
+           onClick={() => switchMode("Login")}>
             Login</button>
         </div>
         <form onSubmit={handleSubmit}>
@@ -101,7 +97,13 @@ const LoginSignup = () => {
               />
             </div>
           </div>
-
+          <div className={styles.submit}>
+            <button type = "submit" className={styles.activeBtn}>
+              {stateVariable === "Sign Up"
+               ? "Sign Up"
+               : "Login"}
+            </button>
+          </div>
         
         </form>
 
