@@ -45,25 +45,21 @@
   box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.2);
 }
 
-.submit {
+.modeSwitcher {
+  box-sizing: border-box;
+  border-radius: 999px;
   display: flex;
   gap: 1rem;
   width: 100%;
-  padding: 1rem;
+  padding: 0.5rem;
+  background-color: #38304c;
+}
+.modeSwitcher button {
+  flex: 1;                 
+  text-align: center;
+  white-space: nowrap;
 }
 
-/* .submit button {
-  font-family: inherit;
-  background-color: #0df5e3;
-  color: #161616;
-  font-weight: 600;
-  border: none;
-  font-size: 0.875rem;
-  line-height: 1.2;
-  border-radius: 24px;
-  padding: 0.6rem 1.8rem;
-  cursor: pointer;
-} */
 
 .submit {
   display: flex;

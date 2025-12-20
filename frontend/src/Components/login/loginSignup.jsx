@@ -48,6 +48,24 @@ const LoginSignup = () => {
       <div className={styles.header}>{stateVariable}</div>
 
       <div className={styles.content}>
+        <div className={styles.modeSwitcher}>
+          <button
+            type = "button"
+            className={stateVariable === "Sign Up" ? styles.activeBtn : styles.inactiveBtn} 
+              onClick={(stateVariable === "Sign Up") 
+              ? handleSubmit 
+              : () => switchMode("Sign Up")}>
+              Sign Up
+          </button>
+
+          <button 
+          type = "button"
+          className={stateVariable === "Login" ? styles.activeBtn : styles.inactiveBtn}
+           onClick={(stateVariable === "Login") 
+              ? handleSubmit 
+              : () => switchMode("Login")}>
+            Login</button>
+        </div>
         <form onSubmit={handleSubmit}>
           <div className={styles.inputs}>
             <div>
@@ -84,24 +102,7 @@ const LoginSignup = () => {
             </div>
           </div>
 
-        <div className={styles.submit}>
-          <button
-            type = "submit"
-            className={stateVariable === "Sign Up" ? styles.activeBtn : styles.inactiveBtn} 
-              onClick={(stateVariable === "Sign Up") 
-              ? handleSubmit 
-              : () => switchMode("Sign Up")}>
-              Sign Up
-          </button>
-
-          <button 
-          type = "submit"
-          className={stateVariable === "Login" ? styles.activeBtn : styles.inactiveBtn}
-           onClick={(stateVariable === "Login") 
-              ? handleSubmit 
-              : () => switchMode("Login")}>
-            Login</button>
-        </div>
+        
         </form>
 
         
